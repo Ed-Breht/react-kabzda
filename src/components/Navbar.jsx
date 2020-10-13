@@ -14,6 +14,9 @@ const Navbar = () => {
         <div>
             <a>Settings</a>
         </div>
+        <div>
+            <a>Testing</a>
+        </div>
     </nav>
 }
 
