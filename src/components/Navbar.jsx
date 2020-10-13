@@ -9,9 +9,6 @@ const Navbar = () => {
             <a>Massages</a>
         </div>
         <div>
-            <a>News</a>
-        </div>
-        <div>
             <a>Music</a>
         </div>
         <div>
