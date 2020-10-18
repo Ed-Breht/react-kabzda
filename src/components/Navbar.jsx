@@ -1,7 +1,8 @@
 import React from 'react';
+import styles from "./Navbar.module.scss"
 
 const Navbar = () => {
-    return <nav className='nav'>
+    return <nav className={styles.nav}>
         <div>
             <a>Profile</a>
         </div>
@@ -13,9 +14,6 @@ const Navbar = () => {
         </div>
         <div>
             <a>Settings</a>
-        </div>
-        <div>
-            <a>Testing</a>
         </div>
     </nav>
 }
