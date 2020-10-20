@@ -1,25 +1,16 @@
 import React from 'react';
+import styles from './Profile.module.scss'
+import MyPosts from "./posts/Posts";
 
 const Profile = () => {
-    return  <div className='content'>
+    return  <div className={styles.content}>
         <div>
-            <img src='https://krot.info/uploads/posts/2020-01/1580225726_56-p-foni-dlya-rieltorskikh-saitov-119.jpg' />
+            <img src='https://img3.goodfon.ru/wallpaper/nbig/f/60/minimalizm-goluboy-fon-kubik.jpg' />
         </div>
         <div>
             ava+description
         </div>
-        <div>
-            my posts
-            <div>
-                new post
-            </div>
-        </div>
-        <div>
-            post 1
-        </div>
-        <div>
-            post 2
-        </div>
+        <MyPosts />
     </div>
 }
 

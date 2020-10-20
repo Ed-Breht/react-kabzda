@@ -11,19 +11,3 @@
     /*grid-grap: 10px;*/
 }
 
-.header{
-  grid-area: h;
-  background-color: aqua;
-}
-.header img {
-  width: 40px;
-}
-
-.nav {
-  grid-area: n;
-  background-color: darkslategray;
-}
-.content {
-  grid-area: c;
-  background-color: blue;
-}
