@@ -3,15 +3,15 @@ import styles from './Profile.module.scss'
 import MyPosts from "./posts/Posts";
 
 const Profile = () => {
-    return  <div className={styles.content}>
+    return <div className={styles.content}>
         <div>
-            <img src='https://img3.goodfon.ru/wallpaper/nbig/f/60/minimalizm-goluboy-fon-kubik.jpg' />
+            <img src='https://img3.goodfon.ru/wallpaper/nbig/f/60/minimalizm-goluboy-fon-kubik.jpg'/>
         </div>
         <div>
             ava+description
         </div>
-        <MyPosts />
+        <MyPosts/>
     </div>
 }
 
-export default  Profile;
+export default Profile;

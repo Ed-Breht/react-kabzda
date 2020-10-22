@@ -1,5 +1,15 @@
-.nav{
+.nav {
   grid-area: n;
   background-color: #c2134d;
   color: white;
+  padding: 20px;
+}
+
+.nav a {
+  color: azure;
+  text-decoration: none;
+}
+
+.nav a.activ {
+  color: gold;
 }
