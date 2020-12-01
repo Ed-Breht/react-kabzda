@@ -15,7 +15,7 @@ const Dialogs = (props) => {
     <Message message={message.message} />
   ))
 
-  let newMessageText = state.newMessageText;
+  let newMessageText = state.newMessageBody;
 
   let addMessage = () => {
     props.store.dispatch(sendMessageCreator());

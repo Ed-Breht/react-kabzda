@@ -27,7 +27,7 @@ let store = {
         { id: 4, name: 'Masha' },
         { id: 5, name: 'Sveta' },
       ],
-      newMessageText: ''
+      newMessageBody: ''
     },
   },
   getState() {
@@ -59,11 +59,11 @@ let store = {
       this._state.profilePage.newPostText = action.newText
       this._callSubscriber(this._state)
     } else if (action.type === UPDATE_NEW_MESSAGE_TEXT) {
-      this._state.dialogsPage.newMessageText = action.messageText;
+      this._state.dialogsPage.newMessageBody = action.body;
       this._callSubscriber(this._state);
     } else if (action.type === SEND_MESSAGE) {
-      let body = this._state.dialogsPage.newMessageText;
-      this._state.dialogsPage.newMessageText = '';
+      let body = this._state.dialogsPage.newMessageBody;
+      this._state.dialogsPage.newMessageBody = '';
       this._state.dialogsPage.messages.push({ id: 6, message: body });
       this._callSubscriber(this._state);
     }
