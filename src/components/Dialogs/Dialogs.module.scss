@@ -1,21 +1,24 @@
-.dialogs {
+.DialogsName {
   display: grid;
   grid-template-columns: 2fr 10fr;
   text-decoration: none;
-  cursor: pointer}
+  cursor: pointer;
 
   .dialogsItems {
     padding: 20px;
     text-decoration: brown;
+    color: white;
+    .active{
+      color: gold;
+      text-decoration: brown;
+    }
   }
-.active{
+  .active{
     color: gold;
     text-decoration: brown;
-}
+  }
 
- .test{
-   color: chartreuse;
- }
+
   .messages {
     padding: 20px;
   }
@@ -23,5 +26,8 @@
   .dialog {
     text-decoration: brown;
   }
+}
 
-
+.message {
+  color: white;
+}

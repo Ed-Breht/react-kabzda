@@ -1,49 +1,48 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import styles from './Dialogs.module.scss'
-import UsersList from './UsersList'
-import Messages from './MessageList'
-import { useParams } from "react-router";
-import {NavLink} from "react-router-dom";
-import DialogItem from "./Dialogitems";
-import Message from "./Message";
+import DialogItem from './Dialogitems'
+import Message from './Message'
+import {sendMessageCreator, updateNewMessageCreator, updateNewPostTextActionCreator} from "../../redux/state";
 
-let Dialogs = [
-    {id: 1 , name: 'Lev'},
-    {id: 2 , name: 'Ivan'},
-    {id: 3 , name: 'Sasha'},
-    {id: 4 , name: 'Masha'},
-    {id: 5 , name: 'Sveta'}
-]
+const Dialogs = (props) => {
 
-let messages =[
-    {id: 1 , message: 'Hello'},
-    {id: 2 , message: 'Hi'},
-    {id: 3 , message: 'Hi, hi'},
-    {id: 4 , message: 'Welcome in this chat'},
-    {id: 5 , message: 'Ok'},
-]
+  let state = props.store.getState().dialogsPage;
 
-let dialogsElements = Dialogs.map ( dialog => <DialogItem name={dialog.name} id={dialog.id} />)
-let messagesElement = messages.map(message => <Message message={message.message} />)
+  let dialogsElements = state.DialogsNames.map((dialog) => (
+    <DialogItem name={dialog.name} id={dialog.id} />
+  ))
+  let messagesElement = state.messages.map((message) => (
+    <Message message={message.message} />
+  ))
 
-const Dialogs = (props) =>{
+  let newMessageText = state.newMessageText;
+
+  let addMessage = () => {
+    props.store.dispatch(sendMessageCreator());
+  }
+  let onNewMessageChange =(event) => {
+    let body= event.target.value;
+    props.store.dispatch(updateNewMessageCreator(body));
+  }
+
+
   return (
-      <div className={styles.dialogs}>
-        <div className={styles.dialogsItems}>
-            {
-                dialogsElements
-            }
+    <div className={styles.DialogsName}>
+      <div className={styles.dialogsItems}>{dialogsElements}</div>
+      <div className={styles.messages}>
+        {messagesElement}
+        <div>
+          <textarea onChange={onNewMessageChange} value={newMessageText}></textarea>
         </div>
-        <div className={styles.messages}>
-            {
-                messagesElement
-            }
+        <div>
+          <button onClick={addMessage}> Send</button>
         </div>
       </div>
+    </div>
   )
 }
 
-export default Dialogs;
+export default Dialogs
 
 // const Dialogs = () => {
 //

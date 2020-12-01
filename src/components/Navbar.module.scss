@@ -1,25 +1,30 @@
+
 .nav {
   grid-area: n;
-  background-color: #c2134d;
+  background-color: #991a1a;
   color: white;
   padding: 20px;
 
+}
 
+.MenuItem{
+  padding: 12px;
+  justify-content: center;
+  display: flex;
 }
 
 .nav a {
-  color: azure;
+  color: #1af3f3;
   text-decoration: none;
   display: inline-block;
   position: relative;
   text-decoration: none;
-  margin-top: 50px;
   svg {
-    width: 76px;
-    height: 40px;
+    //width: 116px;
+    height: 45px;
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: calc(50% - 15px);
     transform: translate(-50%, 7px) translateZ(0);
     fill: none;
     stroke: var(--stroke, var(--line));
@@ -27,31 +32,37 @@
     stroke-width: 2px;
     stroke-dasharray: var(--offset, 69px) 278px;
     stroke-dashoffset: 361px;
+
     transition: stroke 0.25s ease var(--stroke-delay, 0s),
     stroke-dasharray 0.35s;
-
   }
+
   &:hover {
-    --stroke: var(--line-active);
+    --stroke: var(--line-hover);
     --stroke-delay: 0.1s;
     --offset: 180px;
   }
-
 }
+ .nav a.activeLink {
 
-.nav a.active {
-  color: gold;
+  color: rgb(255, 255, 255);
   --stroke: var(--line-active);
   --stroke-delay: 0.1s;
   --offset: 180px;
 }
 
-:root {
-  --text: #2b3044;
-  --line: rgba(255, 255, 255, 0);
-  --line-active: #906bf1;
+.active {
+
+  color: rgb(255, 255, 255);
+  --stroke: var(--line-active);
+  --stroke-delay: 0.1s;
+  --offset: 180px;
 }
 
 
-
-
+:root {
+  --text: #2b3044;
+  --line: rgba(253, 14, 14, 0);
+  --line-active: #02abee;
+  --line-hover: #1af3f3;
+}
