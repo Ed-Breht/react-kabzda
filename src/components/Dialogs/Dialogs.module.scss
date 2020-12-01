@@ -1,22 +1,27 @@
 .dialogs {
   display: grid;
   grid-template-columns: 2fr 10fr;
-
-  cursor: pointer;
+  text-decoration: none;
+  cursor: pointer}
 
   .dialogsItems {
     padding: 20px;
-    .active{
-      color: gold;
-    }
+    text-decoration: brown;
   }
+.active{
+    color: gold;
+    text-decoration: brown;
+}
 
+ .test{
+   color: chartreuse;
+ }
   .messages {
     padding: 20px;
   }
 
   .dialog {
-
+    text-decoration: brown;
   }
-}
+
 

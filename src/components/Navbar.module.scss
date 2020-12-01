@@ -3,13 +3,55 @@
   background-color: #c2134d;
   color: white;
   padding: 20px;
+
+
 }
 
 .nav a {
   color: azure;
   text-decoration: none;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  margin-top: 50px;
+  svg {
+    width: 76px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 7px) translateZ(0);
+    fill: none;
+    stroke: var(--stroke, var(--line));
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke-dasharray: var(--offset, 69px) 278px;
+    stroke-dashoffset: 361px;
+    transition: stroke 0.25s ease var(--stroke-delay, 0s),
+    stroke-dasharray 0.35s;
+
+  }
+  &:hover {
+    --stroke: var(--line-active);
+    --stroke-delay: 0.1s;
+    --offset: 180px;
+  }
+
 }
 
-.nav a.activ {
+.nav a.active {
   color: gold;
+  --stroke: var(--line-active);
+  --stroke-delay: 0.1s;
+  --offset: 180px;
 }
+
+:root {
+  --text: #2b3044;
+  --line: rgba(255, 255, 255, 0);
+  --line-active: #906bf1;
+}
+
+
+
+
