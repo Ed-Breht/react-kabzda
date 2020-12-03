@@ -4,7 +4,7 @@ import Post from './Post'
 import {
   addPostActionCreator,
   updateNewPostTextActionCreator,
-} from '../../redux/state'
+} from '../../redux/Profile-reducer'
 import Button from '@material-ui/core/Button'
 import TextField from '@material-ui/core/TextField'
 import Box from '@material-ui/core/Box'

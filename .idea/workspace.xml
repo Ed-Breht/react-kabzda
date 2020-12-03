@@ -19,9 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="562dc50a-53f1-4f0a-9327-5f43aaa58e77" name="Default Changelist" comment="">
+    <list default="true" id="562dc50a-53f1-4f0a-9327-5f43aaa58e77" name="Default Changelist" comment="tytytyty">
+      <change afterPath="$PROJECT_DIR$/src/redux/Dialogs-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/Profile-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/Sidebar-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsNames.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsNames.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/posts/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/posts/Posts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,10 +53,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\projectJS\projects\01-first-project\react-kabzda-1\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projectJS\projects\01-first-project\react-kabzda-1\src\redux" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -91,8 +100,17 @@
       <workItem from="1606549970878" duration="9588000" />
       <workItem from="1606640456591" duration="7690000" />
       <workItem from="1606750565811" duration="7314000" />
-      <workItem from="1606844103721" duration="956000" />
+      <workItem from="1606844103721" duration="2516000" />
+      <workItem from="1606987052265" duration="7001000" />
     </task>
+    <task id="LOCAL-00001" summary="tytytyty">
+      <created>1606853898248</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606853898248</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +127,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="tytytyty" />
+    <option name="LAST_COMMIT_MESSAGE" value="tytytyty" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="161" key="#Plugins" timestamp="1603647659352">
@@ -145,6 +167,10 @@
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1603738605969" />
     <state x="461" y="165" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605220483575" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606853903661">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1606853903661" />
     <state x="1238" y="212" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603910951247">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
