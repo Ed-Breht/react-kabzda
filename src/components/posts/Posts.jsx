@@ -1,27 +1,23 @@
 import styles from './Posts.module.scss'
 import React from 'react'
 import Post from './Post'
-import {
-  addPostActionCreator,
-  updateNewPostTextActionCreator,
-} from '../../redux/Profile-reducer'
 import Button from '@material-ui/core/Button'
 import TextField from '@material-ui/core/TextField'
 import Box from '@material-ui/core/Box'
 
 const MyPosts = (props) => {
-  let postsElement = props.posts.map((post) => <Post message={post.message} />)
+let postsElement = props.posts.map((post) => <Post message={post.message} />)
+
+  let newPostElement = React.createRef()
 
   let addPost = () => {
-    props.dispatch(addPostActionCreator())
+    props.addPost()
   }
 
   let onPostChange = (event) => {
     let text = event.target.value
-    props.dispatch(updateNewPostTextActionCreator(text))
+    props.updateNewPostText(text)
   }
-
-  let newPostElement = React.createRef()
 
   return (
     <div className={styles.postsBlock}>

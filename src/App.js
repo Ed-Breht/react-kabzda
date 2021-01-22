@@ -3,11 +3,12 @@ import './App.css'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
 import Profile from './components/Profile'
-import Dialogs from './components/Dialogs/DialogsNames'
-import { BrowserRouter, Route } from 'react-router-dom'
+import {BrowserRouter, Route} from 'react-router-dom'
 import Music from './components/Music/Music'
 import Settings from './components/Settings/Settings'
-import DialogItem from './components/Dialogs/Dialogitems'
+import DialogsContainer from "./components/Dialogs/DialogsContainer";
+import UsersContainer from "./components/Users/UsersContainer";
+
 
 const App = (props) => {
   return (
@@ -18,15 +19,13 @@ const App = (props) => {
         <div className="app-wrapper-content">
           <Route
             path="/Dialogs"
-            render={() => <Dialogs  store={props.store}/>}
+            render={() => <DialogsContainer/>}
           />
+          <Route path="/users" render={() => <UsersContainer/>} />
           <Route
             path="/Profile"
             render={() => (
-              <Profile
-                profilePage={props.state.profilePage}
-                dispatch={props.dispatch}
-              />
+              <Profile/>
             )}
           />
           <Route path="/Music" render={() => <Music />} />

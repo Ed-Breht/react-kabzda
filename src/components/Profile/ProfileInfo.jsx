@@ -6,7 +6,7 @@ const ProfileInfo = (props) => {
  return (
      <div>
          <div>
-             <img src='https://img3.goodfon.ru/wallpaper/nbig/f/60/minimalizm-goluboy-fon-kubik.jpg'/>
+             <img src='https://img5.goodfon.ru/wallpaper/nbig/c/68/art-stil-minimalizm-fon-art-style-minimalism-background-ko-3.jpg'/>
          </div>
          <div className={styles}>
              ava+description

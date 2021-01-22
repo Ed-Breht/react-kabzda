@@ -9,7 +9,7 @@ let store = {
         { id: 1, message: 'Hi, how are you' },
         { id: 2, message: 'It`s my first post' },
       ],
-      newPostText: 'samuuuurai',
+      newPostText: 'wake up samurai, we will burn this city',
     },
     dialogsPage: {
       messages: [
