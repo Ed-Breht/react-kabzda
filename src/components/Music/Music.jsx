@@ -1,12 +1,7 @@
-import React from "react";
+import React, { useCallback, useEffect, useMemo, useState } from 'react'
 
 const Music = () => {
-    return(
-        <div>
-            Music
-        </div>
-    )
+  return <div>Music</div>
 }
 
-export default Music;
-
+export default Music

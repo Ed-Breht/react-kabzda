@@ -21,7 +21,7 @@ let postsElement = props.posts.map((post) => <Post message={post.message} />)
 
   return (
     <div className={styles.postsBlock}>
-      <h3>my posts</h3>
+      <h3>Posts</h3>
       <div>
         <Box mb={1}>
           <TextField
